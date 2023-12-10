@@ -1,0 +1,44 @@
+#MoBoxCheckRunMap配置文件
+#作者：MossCG
+
+#检测模式
+#移动监听：MOVE（监听移动事件计算距离，性能消耗较高，较为精准）
+#坐标计算：LOCATION（每隔一段时间计算一次位移，性能消耗较低，较为粗略）
+mode: "LOCATION"
+
+#坐标计算间隔（仅LOCATION模式有效）
+#单位：秒
+locationTime: 5
+
+#统计时长
+#每隔该时长会提示统计数据并清除缓存
+#单位：分钟
+checkTime: 5
+
+#最低限额
+#跑图距离低于此限额不会被公告
+minDistance: 100
+
+#最大榜单长度
+#也就是最多显示多少个跑图的猪咪
+maxPlayer: 5
+
+#统计任务是否异步操作
+#在部分服务端版本上不支持
+asyncTask: true
+
+#信息头
+#[time]为统计时长
+infoPrefix: "&d&l----==前[time]分钟跑图榜单==----"
+
+#信息体
+#[rank]跑图排行榜排名
+#[player]玩家名称
+#[distance]跑图距离
+infoContent: "&a第[rank]名：[player] | [distance]米"
+
+#无榜单信息
+infoNoPlayer: "&a大家都很乖喵~没有人跑图~"
+
+#信息尾
+infoSuffix: "&d请注意跑图不要影响其他玩家噢~"

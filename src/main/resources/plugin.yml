@@ -1,0 +1,12 @@
+name: MoBoxCheckRunMap
+version: V1.0.0.0.0000R
+main: org.mossmc.mosscg.MoBoxCheckRunMap.Main
+author: MossCG
+description: A plugin for check player running on the map.
+commands:
+  mbcrm:
+    description: 主指令
+permissions:
+  mbcrm.op:
+    description: 白名单管理权限
+    default: op
