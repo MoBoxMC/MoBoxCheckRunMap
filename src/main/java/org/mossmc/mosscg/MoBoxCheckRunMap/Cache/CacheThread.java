@@ -56,6 +56,7 @@ public class CacheThread {
             info = info.replace("[player]",player);
             info = info.replace("[distance]",String.valueOf(distance.intValue()));
             BasicInfo.getInstance.getServer().broadcastMessage(info);
+            cacheMap.remove(player);
         }
         //发送尾信息
         BasicInfo.getInstance.getServer().broadcastMessage(ConfigGet.getString("infoSuffix"));
